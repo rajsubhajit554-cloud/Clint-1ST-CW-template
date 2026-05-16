@@ -1,267 +1,132 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dripza | Pure. Crisp. Refreshing.</title>
-    <meta name="description" content="Dripza Water provides premium purification and custom branding services.">
-    
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
-    
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        brand: {
-                            deep: '#001A33',
-                            blue: '#0066CC',
-                            cyan: '#00D2FF',
-                            accent: '#F0F9FF',
-                            purple: '#8b5cf6',
-                        }
-                    },
-                    fontFamily: {
-                        sans: ['Poppins', 'sans-serif'],
-                        outfit: ['Outfit', 'sans-serif'],
-                    }
-                }
+<!DOCTYPE html><html lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Dripza Water - Custom Branding</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style data-purpose="custom-fonts">
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #1a1e29; /* Dark navy blue from image */
+      color: #ffffff;
+    }
+  </style>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              bg: '#1a1e29',
+              dark: '#0a0a0a',
+              cyan: '#00d2ff',
+              purple: '#8b5cf6',
+              purpleLight: '#a78bfa',
+              red: '#ef4444',
             }
+          }
         }
-    </script>
-    
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-    
-    <!-- GSAP -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+      }
+    }
+  </script>
+<link data-snapdom="injected-import" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap" rel="stylesheet"></head>
+<body class="antialiased min-h-screen flex flex-col items-center justify-between">
+<!-- BEGIN: Top Bar -->
+<div class="w-full bg-brand-dark text-white text-xs py-2 px-4 flex items-center gap-2">
+<span class="">+ Welcome Everyone +</span>
+</div>
+<!-- END: Top Bar -->
+<!-- BEGIN: Header Section -->
+<header class="w-full bg-black flex flex-col items-center justify-center border-b border-gray-800 py-1">
+<div class="flex items-center gap-3">
+<!-- Approximating the Dripza Logo - Reduced size as requested -->
+<div class="relative w-12 h-16"><img alt="Dripza Logo" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXyypd8lcuN502cOPzFAoRK8XpYM718eEPQ0n-RwFGz4wA5HLyH0nn1Zgb8FOZ1u5uGhtlN4MjNNwoB1FdSycR75GuMqf7Go9KvCAbyyJbhz8hu29D4F8Ryn18pfAJ9_MgmuLeV94UkilFAm6tiWUlFg25F07cPbiraBHIGNVz9Q0RDdSuyypZZwkAVf0BXHGZCz-9HvmgtvXXpA9z-g6n5VC66CJ2o6Kk7GD5_N5GwdHcGRG0aUp4gPJfRTYuJcTz8XOq9jFyIOW7M68"></div>
+<div class="flex flex-col items-center">
+<h1 class="text-2xl font-bold tracking-wider text-brand-cyan drop-shadow-md italic">Dripza</h1>
+<div class="flex items-center w-full gap-1.5 mt-0.5">
+<div class="h-0.5 bg-brand-cyan flex-grow"></div>
+<span class="text-white text-[10px] font-semibold tracking-widest uppercase">WATER</span>
+<div class="h-0.5 bg-brand-cyan flex-grow"></div>
+</div>
+</div>
+</div>
+</header>
+<!-- END: Header Section -->
+<!-- BEGIN: Main Content -->
+<main class="w-full max-w-md px-4 py-6 flex flex-col items-center gap-8 flex-grow">
+<!-- Sub-header Tagline -->
+<div class="text-center text-xs text-gray-300 space-y-1">
+<p class="">Premium Custom Water Bottle Branding Service</p>
+<p class="">Fast Delivery • Premium Quality • Professional Design</p>
+</div>
+<!-- Greeting Card -->
+<section class="w-full bg-brand-purple/20 border-2 border-brand-purple rounded-[2rem] p-6 relative overflow-hidden shadow-[0_0_15px_rgba(139,92,246,0.3)] mt-4 flex flex-col items-center">
+<!-- Decorative AJ element -->
+<div class="w-24 h-24 overflow-hidden flex items-center justify-center mb-4 z-10 relative">
+<img alt="AJ Logo" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6Kk6TOjqdnpTUdIFqSQIpiIC9AB97mt4YcE9YGebUCYSgbwSMRq3VSmtj9f-F67iOWQn5CJ9WPg3JwPpmN24OCY9jyWyjyRR-9iN0AWvECbw9o4VN-fr2v_Fd4WaqAus_VdJDVNtdD_kO0W7BEd0upQrQg-QK1a7M07DkMViEdcfBiDgVvaQjr8CeW9BiHUFVBEthA6E14Qat1i98IHH9Q7xYBMyesBfwgBy5Sluzw5eDOC6R0B4K6SGiHVJif8lP8wIHeRPqN1aQMm0">
+</div>
+<div class="text-sm font-semibold text-white leading-relaxed relative z-10 text-center">
+<p class="">"🌿 <span class="text-yellow-300">AJ Restaurant &amp; Cafe-এ</span></p>
+<p class="text-brand-cyan text-lg mb-1">আপনাকে আন্তরিক স্বাগতম! 💧</p>
+<p class="">এখানে পাবেন সুস্বাদু খাবার আর বিশুদ্ধ জল নিশ্চয়তা।</p>
+<p class="">আপনার সুন্দর মুহূর্ত কাটুক আমাদের সাথে।</p>
+<p class="">ধন্যবাদ! 😊"</p>
+</div>
+</section>
+<!-- Action Buttons -->
+<section class="w-full flex flex-col items-center gap-6 mt-4">
+<!-- Button 1 -->
+<button class="relative w-[85%] h-14 bg-brand-purple/80 hover:bg-brand-purple rounded-r-full flex items-center justify-center group transition-colors ml-8 shadow-lg">
+<div class="absolute -left-10 w-20 h-20 bg-brand-purple rounded-full flex items-center justify-center border-4 border-[#1a1e29] shadow-[0_0_10px_rgba(139,92,246,0.8)] z-10">
+</div>
+<span class="text-white font-bold tracking-wider pl-6">― DETAILS &amp; CONTACT</span>
+</button>
+<!-- Button 2 -->
+<button class="relative w-[85%] h-14 bg-brand-red/90 hover:bg-brand-red rounded-r-full flex items-center justify-center group transition-colors ml-8 shadow-lg">
+<div class="absolute -left-10 w-20 h-20 bg-brand-red rounded-full flex items-center justify-center border-4 border-[#1a1e29] shadow-[0_0_10px_rgba(239,68,68,0.8)] z-10">
+<div class="w-14 h-16 flex items-center justify-center">
+<svg class="w-full h-full drop-shadow-md" viewBox="0 0 100 120">
+<path d="M50 0 C50 0 10 50 10 80 A40 40 0 0 0 90 80 C90 50 50 0 50 0 Z" fill="none" stroke="#00d2ff" stroke-width="8"></path>
+<path d="M20 80 A30 30 0 0 0 80 80 C80 80 50 45 50 45 C50 45 20 80 20 80 Z" fill="#00d2ff"></path>
+</svg>
+</div>
+</div>
+<span class="text-white font-bold tracking-wider pl-6 underline decoration-2 underline-offset-4">― DETAILS &amp; CONTACT</span>
+</button>
+</section>
+</main>
+<!-- END: Main Content -->
+<!-- BEGIN: Footer Section -->
+<footer class="w-full flex flex-col items-center justify-center py-8 gap-6 border-t border-gray-800/50 mt-8">
+<div class="text-center">
+<h2 class="text-brand-cyan text-xl font-extrabold tracking-wide mb-1 uppercase">THANK YOU FOR VISITING OUR WEBSITE</h2>
+<p class="text-gray-200 text-lg">Stay Fresh. Stay Dripza</p>
+</div>
+<div class="flex flex-col items-center gap-3">
+<p class="text-xs text-gray-400">© 2026 Dripza All Rights Reserved</p>
+<div class="flex gap-4 items-center">
+<!-- Location Icon Placeholder -->
+<div class="w-6 h-6 text-red-500">
+<svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path></svg>
+</div>
+<!-- Instagram Icon Placeholder -->
+<div class="w-6 h-6 text-pink-500">
+<svg fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.20 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"></path></svg>
+</div>
+<!-- WhatsApp Icon Placeholder -->
+<div class="w-6 h-6 text-green-500">
+<svg fill="currentColor" viewBox="0 0 24 24"><path d="M12.031 0C5.385 0 0 5.384 0 12.031c0 2.648.85 5.12 2.361 7.202L.536 24l4.908-1.286c2.002 1.343 4.364 2.115 6.587 2.115 6.645 0 12.03-5.385 12.03-12.032C24 5.385 18.676 0 12.031 0zM12.031 22.8c-2.186 0-4.321-.572-6.196-1.644l-.444-.254-3.27.857.874-3.18-.282-.45c-1.182-1.89-1.808-4.08-1.808-6.302 0-5.525 4.498-10.024 10.026-10.024 5.526 0 10.025 4.498 10.025 10.024 0 5.526-4.499 10.024-10.025 10.024H12.03zM17.5 15.29c-.301-.15-1.782-.88-2.057-.98-.275-.1-.476-.15-.675.15-.2.301-.777.98-.952 1.18-.175.2-.35.226-.651.076-.3-.15-1.272-.47-2.42-1.49-.893-.794-1.498-1.776-1.673-2.077-.175-.3-.019-.462.13-.612.134-.135.302-.351.452-.527.151-.175.2-.301.3-.501.1-.2.05-.376-.025-.526-.075-.15-.676-1.628-.925-2.228-.242-.586-.487-.506-.675-.516-.176-.01-.376-.01-.576-.01-.2 0-.526.075-.801.375-.276.301-1.053 1.028-1.053 2.508 0 1.48 1.077 2.91 1.228 3.11.15.2 2.115 3.226 5.12 4.524 2.457 1.06 3.036.853 3.537.803.501-.05 1.781-.728 2.032-1.43.25-.702.25-1.303.175-1.43-.075-.125-.275-.2-.575-.35z"></path></svg>
+</div>
+<!-- Facebook Icon Placeholder -->
+<div class="w-6 h-6 text-blue-600">
+<svg fill="currentColor" viewBox="0 0 24 24"><path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"></path></svg>
+</div>
+</div>
+</div>
+</footer>
+<!-- END: Footer Section -->
 
-    <style>
-        .glass {
-            background: rgba(255, 255, 255, 0.05);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        
-        .hero-gradient {
-            background: radial-gradient(circle at center, rgba(0, 210, 255, 0.15) 0%, rgba(0, 26, 51, 1) 100%);
-        }
 
-        .text-gradient {
-            background: linear-gradient(to right, #00D2FF, #0066CC);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
 
-        .section-reveal {
-            opacity: 0;
-            transform: translateY(30px);
-        }
 
-        .custom-shadow {
-            box-shadow: 0 0 30px rgba(0, 210, 255, 0.2);
-        }
-    </style>
-</head>
-<body class="bg-brand-deep text-white font-sans selection:bg-brand-cyan selection:text-brand-deep">
-
-    <!-- Preloader -->
-    <div id="preloader" class="fixed inset-0 z-[100] flex items-center justify-center bg-brand-deep">
-        <div class="relative">
-            <div class="w-20 h-20 border-4 border-brand-cyan/20 border-t-brand-cyan rounded-full animate-spin"></div>
-            <div class="absolute inset-0 flex items-center justify-center">
-                <span class="text-xs font-bold tracking-widest text-brand-cyan">D</span>
-            </div>
-        </div>
-    </div>
-
-    <!-- Navigation -->
-    <nav class="fixed top-0 w-full z-50 transition-all duration-300 py-6 px-6 lg:px-12" id="main-nav">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <div class="flex items-center gap-2 group cursor-pointer">
-                <div class="w-10 h-10 bg-brand-cyan rounded-xl flex items-center justify-center shadow-lg shadow-brand-cyan/20 group-hover:rotate-12 transition-transform">
-                    <i data-lucide="droplets" class="text-brand-deep w-6 h-6"></i>
-                </div>
-                <span class="text-2xl font-outfit font-bold tracking-tight">DRIPZA<span class="text-brand-cyan">.</span></span>
-            </div>
-            
-            <div class="hidden md:flex items-center gap-8 text-sm font-semibold tracking-wide">
-                <a href="#hero" class="hover:text-brand-cyan transition-colors">Home</a>
-                <a href="#about" class="hover:text-brand-cyan transition-colors">About</a>
-                <a href="#services" class="hover:text-brand-cyan transition-colors">Services</a>
-                <a href="#welcome" class="hover:text-brand-cyan transition-colors">AJ Restaurant</a>
-                <a href="#contact" class="bg-brand-cyan text-brand-deep px-6 py-2.5 rounded-full hover:bg-white transition-all transform hover:scale-105 active:scale-95 shadow-xl shadow-brand-cyan/10">Get Started</a>
-            </div>
-
-            <button class="md:hidden text-white" id="mobile-menu-btn">
-                <i data-lucide="menu" class="w-8 h-8"></i>
-            </button>
-        </div>
-    </nav>
-
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="fixed inset-0 z-40 bg-brand-deep/95 backdrop-blur-xl hidden flex flex-col items-center justify-center gap-8 text-2xl font-bold">
-        <a href="#hero" class="mobile-link">Home</a>
-        <a href="#about" class="mobile-link">About</a>
-        <a href="#services" class="mobile-link">Services</a>
-        <a href="#welcome" class="mobile-link">AJ Restaurant</a>
-        <a href="#contact" class="bg-brand-cyan text-brand-deep px-8 py-3 rounded-full mt-4">Contact</a>
-        <button id="close-menu" class="absolute top-8 right-8"><i data-lucide="x" class="w-10 h-10"></i></button>
-    </div>
-
-    <!-- Hero Section -->
-    <section id="hero" class="relative min-h-screen flex items-center pt-20 overflow-hidden hero-gradient">
-        <div class="max-w-7xl mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-12 items-center relative z-10">
-            <div id="hero-content">
-                <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-6 border-brand-cyan/20">
-                    <span class="w-2 h-2 bg-brand-cyan rounded-full animate-ping"></span>
-                    <span class="text-xs font-bold tracking-widest uppercase text-brand-cyan">Premium Hydration</span>
-                </div>
-                <h1 class="text-5xl lg:text-8xl font-outfit font-extrabold leading-[1.1] mb-6">
-                    Pure. Crisp. <br>
-                    <span class="text-gradient">Refreshing.</span>
-                </h1>
-                <p class="text-gray-400 text-lg lg:text-xl max-w-xl mb-10 leading-relaxed">
-                    Dripza brings you the essence of nature in its purest form. From advanced purification to bespoke branding for your business.
-                </p>
-                <div class="flex flex-wrap gap-4">
-                    <a href="#services" class="px-8 py-4 bg-brand-cyan text-brand-deep font-bold rounded-2xl flex items-center gap-2 hover:bg-white transition-all group">
-                        Explore Services
-                        <i data-lucide="arrow-right" class="w-5 h-5 group-hover:translate-x-1 transition-transform"></i>
-                    </a>
-                    <a href="#about" class="px-8 py-4 glass text-white font-bold rounded-2xl hover:bg-white/10 transition-all">
-                        Our Story
-                    </a>
-                </div>
-            </div>
-
-            <div class="relative" id="hero-image-container">
-                <div class="absolute inset-0 bg-brand-cyan/20 rounded-full filter blur-[80px] -z-10 scale-75"></div>
-                <img src="assets/hero.png" alt="Dripza Premium Water" class="w-full h-auto drop-shadow-[0_0_50px_rgba(0,210,255,0.3)] transform hover:scale-105 transition-transform duration-700">
-            </div>
-        </div>
-    </section>
-
-    <!-- Welcome Section (AJ Restaurant Integration) -->
-    <section id="welcome" class="py-24 px-6 lg:px-12 bg-white/5">
-        <div class="max-w-5xl mx-auto">
-            <div class="glass p-12 rounded-[3rem] border-brand-purple/30 relative overflow-hidden flex flex-col md:flex-row items-center gap-12 section-reveal">
-                <div class="w-48 h-48 flex-shrink-0 bg-brand-purple/20 rounded-full flex items-center justify-center p-8 custom-shadow">
-                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6Kk6TOjqdnpTUdIFqSQIpiIC9AB97mt4YcE9YGebUCYSgbwSMRq3VSmtj9f-F67iOWQn5CJ9WPg3JwPpmN24OCY9jyWyjyRR-9iN0AWvECbw9o4VN-fr2v_Fd4WaqAus_VdJDVNtdD_kO0W7BEd0upQrQg-QK1a7M07DkMViEdcfBiDgVvaQjr8CeW9BiHUFVBEthA6E14Qat1i98IHH9Q7xYBMyesBfwgBy5Sluzw5eDOC6R0B4K6SGiHVJif8lP8wIHeRPqN1aQMm0" alt="AJ Logo" class="w-full h-full object-contain">
-                </div>
-                <div class="text-center md:text-left">
-                    <h2 class="text-3xl lg:text-4xl font-outfit font-bold mb-6">
-                        🌿 <span class="text-yellow-400">AJ Restaurant & Cafe-এ</span> <br>
-                        আপনাকে আন্তরিক স্বাগতম! 💧
-                    </h2>
-                    <p class="text-gray-300 text-lg leading-relaxed mb-8">
-                        এখানে পাবেন সুস্বাদু খাবার আর বিশুদ্ধ জল নিশ্চয়তা। আপনার সুন্দর মুহূর্ত কাটুক আমাদের সাথে। ধন্যবাদ! 😊
-                    </p>
-                    <div class="flex flex-wrap gap-4 justify-center md:justify-start">
-                        <button class="px-6 py-3 bg-brand-purple text-white font-bold rounded-xl hover:bg-brand-purple/80 transition-all">Details & Contact</button>
-                        <button class="px-6 py-3 glass text-white font-bold rounded-xl hover:bg-white/10 transition-all">Visit Cafe</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="py-24 px-6 lg:px-12 relative">
-        <div class="max-w-7xl mx-auto">
-            <div class="text-center mb-20 section-reveal">
-                <h2 class="text-xs font-bold tracking-[0.3em] text-brand-cyan uppercase mb-4">What We Do</h2>
-                <h3 class="text-4xl lg:text-5xl font-outfit font-bold">Premium Services</h3>
-            </div>
-
-            <div class="grid md:grid-cols-3 gap-8">
-                <div class="glass p-10 rounded-[2.5rem] hover:-translate-y-4 transition-all duration-500 section-reveal">
-                    <i data-lucide="home" class="w-12 h-12 text-brand-cyan mb-8"></i>
-                    <h4 class="text-2xl font-bold mb-4">Residential Supply</h4>
-                    <p class="text-gray-400 leading-relaxed mb-8">Pure drinking water delivered straight to your doorstep.</p>
-                </div>
-
-                <div class="glass p-10 rounded-[2.5rem] hover:-translate-y-4 transition-all duration-500 border-brand-cyan/20 section-reveal" style="transition-delay: 0.1s">
-                    <i data-lucide="building-2" class="w-12 h-12 text-brand-cyan mb-8"></i>
-                    <h4 class="text-2xl font-bold mb-4">Corporate Branding</h4>
-                    <p class="text-gray-400 leading-relaxed mb-8">Customized labels for your company logo and events.</p>
-                </div>
-
-                <div class="glass p-10 rounded-[2.5rem] hover:-translate-y-4 transition-all duration-500 section-reveal" style="transition-delay: 0.2s">
-                    <i data-lucide="filter" class="w-12 h-12 text-brand-cyan mb-8"></i>
-                    <h4 class="text-2xl font-bold mb-4">Bulk Filtration</h4>
-                    <p class="text-gray-400 leading-relaxed mb-8">Industrial-scale purification systems for large units.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="py-12 border-t border-white/5 text-center">
-        <div class="max-w-7xl mx-auto px-6">
-            <div class="flex items-center justify-center gap-2 mb-8">
-                <div class="w-8 h-8 bg-brand-cyan rounded-lg flex items-center justify-center">
-                    <i data-lucide="droplets" class="text-brand-deep w-5 h-5"></i>
-                </div>
-                <span class="text-xl font-outfit font-bold uppercase tracking-widest">DRIPZA WATER</span>
-            </div>
-            <p class="text-gray-500 text-sm mb-4 uppercase tracking-[0.2em]">Thank you for visiting our website</p>
-            <p class="text-gray-400 text-lg mb-8">Stay Fresh. Stay Dripza</p>
-            <p class="text-xs text-gray-600 font-bold tracking-widest uppercase">&copy; 2026 DRIPZA WATER. ALL RIGHTS RESERVED.</p>
-        </div>
-    </footer>
-
-    <!-- Scripts -->
-    <script>
-        lucide.createIcons();
-
-        window.addEventListener('load', () => {
-            gsap.to('#preloader', {
-                opacity: 0,
-                duration: 1,
-                onComplete: () => {
-                    document.getElementById('preloader').style.display = 'none';
-                    revealHero();
-                }
-            });
-        });
-
-        window.addEventListener('scroll', () => {
-            const nav = document.getElementById('main-nav');
-            if (window.scrollY > 50) nav.classList.add('glass', 'py-4');
-            else nav.classList.remove('glass', 'py-4');
-        });
-
-        function revealHero() {
-            const tl = gsap.timeline();
-            tl.from('#hero-content h1', { y: 100, opacity: 0, duration: 1 })
-              .from('#hero-content p', { y: 50, opacity: 0, duration: 1 }, '-=0.7')
-              .from('#hero-content .flex', { y: 50, opacity: 0, duration: 1 }, '-=0.7')
-              .from('#hero-image-container', { scale: 0.8, opacity: 0, duration: 1.5 }, '-=1');
-        }
-
-        document.querySelectorAll('.section-reveal').forEach(section => {
-            gsap.to(section, {
-                scrollTrigger: { trigger: section, start: 'top 85%' },
-                y: 0, opacity: 1, duration: 1.2
-            });
-        });
-
-        gsap.to('#hero-image-container img', { y: 20, duration: 3, repeat: -1, yoyo: true, ease: 'sine.inOut' });
-
-        // Mobile Menu
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        const closeMenu = document.getElementById('close-menu');
-        mobileMenuBtn.onclick = () => mobileMenu.classList.remove('hidden');
-        closeMenu.onclick = () => mobileMenu.classList.add('hidden');
-    </script>
-</body>
-</html>
+</body></html>
