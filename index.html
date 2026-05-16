@@ -99,6 +99,13 @@
     .animate-aj-logo {
       animation: popAndSpin 1s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
     }
+
+    .glass-header {
+      background: rgba(0, 0, 0, 0.7);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
   </style>
 <script>
     tailwind.config = {
@@ -121,7 +128,7 @@
 <link data-snapdom="injected-import" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap" rel="stylesheet"></head>
 <body class="antialiased min-h-screen flex flex-col items-center justify-between">
 <!-- BEGIN: Header Section -->
-<header class="w-full bg-black flex flex-col items-center justify-center border-b border-gray-800 py-1 overflow-hidden">
+<header class="w-full glass-header sticky top-0 z-50 flex flex-col items-center justify-center py-1 overflow-hidden">
 <div class="flex items-center gap-3 relative -left-1">
 <!-- Approximating the Dripza Logo - Increased size as requested -->
 <div class="relative w-16 h-20 animate-fadeInUp animate-float logo-shine"><img alt="Dripza Logo" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXyypd8lcuN502cOPzFAoRK8XpYM718eEPQ0n-RwFGz4wA5HLyH0nn1Zgb8FOZ1u5uGhtlN4MjNNwoB1FdSycR75GuMqf7Go9KvCAbyyJbhz8hu29D4F8Ryn18pfAJ9_MgmuLeV94UkilFAm6tiWUlFg25F07cPbiraBHIGNVz9Q0RDdSuyypZZwkAVf0BXHGZCz-9HvmgtvXXpA9z-g6n5VC66CJ2o6Kk7GD5_N5GwdHcGRG0aUp4gPJfRTYuJcTz8XOq9jFyIOW7M68"></div>
