@@ -9,7 +9,44 @@
       font-family: 'Poppins', sans-serif;
       background-color: #1a1e29; /* Dark navy blue from image */
       color: #ffffff;
+      overflow-x: hidden;
     }
+
+    /* Trending Animations */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+
+    @keyframes shine {
+      0% { background-position: -200% center; }
+      100% { background-position: 200% center; }
+    }
+
+    .animate-fadeInUp {
+      animation: fadeInUp 0.8s ease-out forwards;
+    }
+
+    .animate-float {
+      animation: float 3s ease-in-out infinite;
+    }
+
+    .text-shine {
+      background: linear-gradient(90deg, #00d2ff, #ffffff, #00d2ff);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: shine 4s linear infinite;
+    }
+
+    .delay-1 { animation-delay: 0.2s; }
+    .delay-2 { animation-delay: 0.4s; }
   </style>
 <script>
     tailwind.config = {
@@ -32,13 +69,13 @@
 <link data-snapdom="injected-import" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap" rel="stylesheet"></head>
 <body class="antialiased min-h-screen flex flex-col items-center justify-between">
 <!-- BEGIN: Header Section -->
-<header class="w-full bg-black flex flex-col items-center justify-center border-b border-gray-800 py-1">
+<header class="w-full bg-black flex flex-col items-center justify-center border-b border-gray-800 py-1 overflow-hidden">
 <div class="flex items-center gap-3 relative -left-1">
 <!-- Approximating the Dripza Logo - Increased size as requested -->
-<div class="relative w-16 h-20"><img alt="Dripza Logo" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXyypd8lcuN502cOPzFAoRK8XpYM718eEPQ0n-RwFGz4wA5HLyH0nn1Zgb8FOZ1u5uGhtlN4MjNNwoB1FdSycR75GuMqf7Go9KvCAbyyJbhz8hu29D4F8Ryn18pfAJ9_MgmuLeV94UkilFAm6tiWUlFg25F07cPbiraBHIGNVz9Q0RDdSuyypZZwkAVf0BXHGZCz-9HvmgtvXXpA9z-g6n5VC66CJ2o6Kk7GD5_N5GwdHcGRG0aUp4gPJfRTYuJcTz8XOq9jFyIOW7M68"></div>
+<div class="relative w-16 h-20 animate-fadeInUp animate-float"><img alt="Dripza Logo" class="w-full h-full object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBXyypd8lcuN502cOPzFAoRK8XpYM718eEPQ0n-RwFGz4wA5HLyH0nn1Zgb8FOZ1u5uGhtlN4MjNNwoB1FdSycR75GuMqf7Go9KvCAbyyJbhz8hu29D4F8Ryn18pfAJ9_MgmuLeV94UkilFAm6tiWUlFg25F07cPbiraBHIGNVz9Q0RDdSuyypZZwkAVf0BXHGZCz-9HvmgtvXXpA9z-g6n5VC66CJ2o6Kk7GD5_N5GwdHcGRG0aUp4gPJfRTYuJcTz8XOq9jFyIOW7M68"></div>
 <div class="flex flex-col items-center">
-<h1 class="text-2xl font-bold tracking-wider text-brand-cyan drop-shadow-md italic">Dripza</h1>
-<div class="flex items-center w-full gap-1.5 mt-0.5">
+<h1 class="text-2xl font-bold tracking-wider text-brand-cyan drop-shadow-md italic animate-fadeInUp delay-1 text-shine">Dripza</h1>
+<div class="flex items-center w-full gap-1.5 mt-0.5 animate-fadeInUp delay-2">
 <div class="h-0.5 bg-brand-cyan flex-grow"></div>
 <span class="text-white text-[10px] font-semibold tracking-widest uppercase">WATER</span>
 <div class="h-0.5 bg-brand-cyan flex-grow"></div>
