@@ -2,7 +2,7 @@
 <meta charset="utf-8">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>dripza x aj restaurant cafe</title>
-<link rel="icon" type="image/png" href="dripza durga puja llogo.png">
+<link rel="icon" type="image/png" href="Dripza icon .png">
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <style data-purpose="custom-fonts">
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
@@ -53,36 +53,7 @@
       100% { transform: translateX(150%) rotate(45deg); }
     }
 
-    .logo-shine {
-      position: relative;
-      overflow: hidden;
-      mask-image: url("dripza durga puja llogo.png");
-      mask-size: contain;
-      mask-repeat: no-repeat;
-      mask-position: center;
-      -webkit-mask-image: url("dripza durga puja llogo.png");
-      -webkit-mask-size: contain;
-      -webkit-mask-repeat: no-repeat;
-      -webkit-mask-position: center;
-    }
 
-    .logo-shine::after {
-      content: "";
-      position: absolute;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
-      background: linear-gradient(
-        45deg,
-        rgba(255, 255, 255, 0) 0%,
-        rgba(255, 255, 255, 0.1) 45%,
-        rgba(255, 255, 255, 0.8) 50%,
-        rgba(255, 255, 255, 0.1) 55%,
-        rgba(255, 255, 255, 0) 100%
-      );
-      animation: logoShine 4s infinite;
-    }
 
     .delay-1 { animation-delay: 0.2s; }
     .delay-2 { animation-delay: 0.4s; }
@@ -142,6 +113,31 @@
       transform: translateY(-3px) scale(1.15);
       filter: drop-shadow(0 0 8px currentColor);
     }
+
+    /* Football Dribbling Animation */
+    @keyframes runAcross {
+      0% { transform: translateX(-80px); }
+      100% { transform: translateX(100vw); }
+    }
+
+    @keyframes playerRun {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-4px) rotate(6deg); }
+    }
+
+    @keyframes ballDribble {
+      0%, 100% { transform: translateX(0) translateY(0) rotate(0deg); }
+      25% { transform: translateX(20px) translateY(-12px) rotate(180deg); }
+      50% { transform: translateX(36px) translateY(0) rotate(360deg); }
+      75% { transform: translateX(16px) translateY(-6px) rotate(540deg); }
+    }
+
+    @keyframes jumpOver {
+      0%, 38% { transform: translateY(0) rotate(0deg); }
+      48% { transform: translateY(-85px) rotate(-15deg); }
+      58% { transform: translateY(0) rotate(0deg); }
+      100% { transform: translateY(0) rotate(0deg); }
+    }
   </style>
 <script>
     tailwind.config = {
@@ -164,10 +160,27 @@
 <link data-snapdom="injected-import" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap" rel="stylesheet"></head>
 <body class="antialiased min-h-screen flex flex-col items-center justify-between">
 <!-- BEGIN: Header Section -->
-<header class="w-full bg-[#001A33] flex flex-col items-center justify-center border-b border-white/10 py-2 overflow-hidden shadow-lg">
-<div class="flex items-center gap-3 relative -left-1">
+<header class="w-full relative flex flex-col items-center justify-center border-b border-white/10 py-6 overflow-hidden shadow-lg bg-cover bg-center" style="background-image: url('Black%20and%20White%20Minimalist%20Personal%20Profile%20LinkedIn%20Banner.png');">
+<div class="absolute inset-0 bg-slate-950/60 backdrop-blur-[1px]"></div>
+
+<!-- Footballer Dribbling Animation -->
+<div class="absolute bottom-1 left-0 w-full h-28 overflow-visible pointer-events-none z-20">
+  <div class="absolute bottom-0 flex items-end" style="animation: runAcross 10s linear infinite;">
+    <!-- Vertically jumping wrapper -->
+    <div class="flex items-end" style="animation: jumpOver 10s ease-in-out infinite;">
+      <!-- Player Wrapper (flipped to face right) -->
+      <div class="inline-block" style="transform: scaleX(-1);">
+        <div class="text-xl leading-none select-none" style="animation: playerRun 0.4s ease-in-out infinite; transform-origin: bottom center;">🏃</div>
+      </div>
+      <!-- Football -->
+      <div class="text-xs leading-none select-none ml-1 mb-0.5" style="animation: ballDribble 0.8s ease-in-out infinite;">⚽</div>
+    </div>
+  </div>
+</div>
+
+<div class="flex items-center gap-3 relative z-10 -left-1">
 <!-- Approximating the Dripza Logo - Increased size as requested -->
-<div class="relative w-16 h-20 animate-fadeInUp animate-float logo-shine"><img alt="Dripza Logo" class="w-full h-full object-contain" src="dripza durga puja llogo.png"></div>
+<div class="relative w-16 h-20 animate-fadeInUp animate-float" id="aj-logo-container"><img alt="Dripza Logo" class="w-full h-full object-contain" src="Dripza%20icon%20.png"></div>
 <div class="flex flex-col items-center">
 <h1 class="text-2xl font-bold tracking-wider text-brand-cyan drop-shadow-md italic animate-fadeInUp delay-1 text-shine">Dripza</h1>
 <div class="flex items-center w-full gap-1.5 mt-0.5 animate-fadeInUp delay-2">
@@ -189,23 +202,23 @@
 
 <!-- Durga Puja Image -->
 <div class="w-full rounded-[1.5rem] overflow-hidden shadow-2xl shadow-black/30 -mt-2 border border-white/10">
-<img alt="AJ Durga Puja" class="w-full h-auto object-cover" src="aj durgapuja puja logo.jpeg">
+<img alt="AJ Durga Puja" class="w-full h-auto object-cover" src="aj%20durgapuja%20puja%20logo.jpeg">
 </div>
 <!-- Action Buttons -->
-<section class="w-full flex flex-col items-center gap-8 mt-6">
+<section class="w-full flex flex-col items-center gap-8 mt-6 px-6">
 <!-- Button 1 -->
-<a href="https://aj-restaurant-website.vercel.app/" target="_blank" rel="noopener noreferrer" class="modern-btn btn-glow-blue w-[90%] h-16 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full flex items-center justify-center ml-4 group shadow-lg">
-<div class="absolute -left-6 w-16 h-16 bg-white rounded-full flex items-center justify-center border-2 border-blue-600 shadow-lg z-10 group-hover:rotate-12 transition-transform">
-<img src="durga puja vertion aj logo.png" alt="Logo" class="w-11 h-11 object-contain">
+<a href="https://aj-restaurant-website.vercel.app/" target="_blank" rel="noopener noreferrer" class="modern-btn btn-glow-blue w-full max-w-sm h-16 bg-gradient-to-r from-blue-600 to-indigo-600 rounded-full flex items-center justify-center group shadow-lg">
+<div class="absolute -left-6 top-0 w-16 h-16 bg-black rounded-full flex items-center justify-center border-2 border-blue-600 shadow-lg z-10 group-hover:rotate-12 transition-transform">
+<img src="durga%20puja%20vertion%20aj%20logo.png" alt="Logo" class="w-11 h-11 object-contain">
 </div>
-<span class="text-white font-bold tracking-widest pl-6 uppercase text-sm">Details & Contact</span>
+<span class="text-white font-bold tracking-widest pl-6 uppercase text-sm">AJ Restaurant & Cafe</span>
 </a>
 <!-- Button 2 (Cyan/Water themed) -->
-<a href="https://dripza-water-main.vercel.app" target="_blank" rel="noopener noreferrer" class="modern-btn btn-glow-cyan w-[90%] h-16 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full flex items-center justify-center ml-4 group shadow-lg">
-<div class="absolute -left-6 w-16 h-16 bg-white rounded-full flex items-center justify-center border-2 border-cyan-500 shadow-lg z-10 group-hover:rotate-12 transition-transform">
-<img src="dripza durga puja llogo.png" alt="Logo" class="w-11 h-11 object-contain">
+<a href="https://dripza-water-main.vercel.app" target="_blank" rel="noopener noreferrer" class="modern-btn btn-glow-cyan w-full max-w-sm h-16 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full flex items-center justify-center group shadow-lg">
+<div class="absolute -left-6 top-0 w-16 h-16 bg-black rounded-full flex items-center justify-center border-2 border-cyan-500 shadow-lg z-10 group-hover:rotate-12 transition-transform">
+<img src="Dripza%20icon%20.png" alt="Logo" class="w-14 h-14 object-contain">
 </div>
-<span class="text-white font-bold tracking-widest pl-6 uppercase text-sm">Details & Contact</span>
+<span class="text-white font-bold tracking-widest pl-6 uppercase text-sm">Dripza Water Service</span>
 </a>
 </section>
 </main>
